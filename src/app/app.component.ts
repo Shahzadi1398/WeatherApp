@@ -73,7 +73,7 @@ export class AppComponent {
   }
 
   searchCity() {
-    const apiKey = '6baa4cf0a9e19008c8eb6782d4251c19';
+    const apiKey = 'API_KEY';
     const city = this.city;
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
@@ -168,7 +168,7 @@ export class AppComponent {
         (position) => {
           const lat = position.coords.latitude;
           const lon = position.coords.longitude;
-          const apiKey = '6baa4cf0a9e19008c8eb6782d4251c19';
+          const apiKey = 'API_KEY';
           const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
           if (this.map) {
             this.map.remove();
